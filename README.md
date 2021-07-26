@@ -3,4 +3,4 @@
 |code class|link|
 |----------|----|
 |array-reverse|[link](code01/README.md)|
-|class02|[link]()|
+|array-insert-shift|[link](code02/README.md)|
