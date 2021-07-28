@@ -2,7 +2,7 @@
 ![2D array](code4.PNG)
 
 ### code:
-``` public static List<Integer> summation(int[][] array){
+ ``public static List<Integer> summation(int[][] array){
     List<Integer>listofsum=new ArrayList<Integer>();
     for (int i=0;i<array.length;i++){
         int sum=0;
@@ -13,5 +13,5 @@
         listofsum.add(sum);
     }
     System.out.println(listofsum);
-    return listofsum;``
-}
+    return listofsum;
+}``
