@@ -1,4 +1,4 @@
-# data-structures-and-algorithms401
+# data-structures-and-algorithms 401
 ## Table of contents:
 |code class|link|
 |----------|----|
