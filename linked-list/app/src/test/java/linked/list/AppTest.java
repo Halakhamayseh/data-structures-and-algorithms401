@@ -10,5 +10,10 @@ class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        LinkedList funcTest =new LinkedList();
+        funcTest.insert(3);
+        assertEquals(3,funcTest.head.valueNode);
+        assertTrue(funcTest.includes(3));
+        //assertEquals({2});
     }
 }

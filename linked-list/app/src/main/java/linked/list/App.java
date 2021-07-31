@@ -10,5 +10,12 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        LinkedList newList = new LinkedList();
+        newList.insert(3);
+        newList.insert(1);
+        newList.toString();
+        System.out.println(newList.toString());
+
+        System.out.println(newList.includes(3));
     }
 }

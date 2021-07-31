@@ -22,7 +22,7 @@ public class LinkedList {
       String strings="";
       Node current=head;
    while (current!=null){
-       strings=strings+"";
+       strings=strings+"{"+current.valueNode+"}->";
                current=current.next;
    }
         strings=strings+"null";
