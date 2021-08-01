@@ -28,4 +28,41 @@ public class LinkedList {
         strings=strings+"null";
    return strings;
     }
+    public void append(int value){
+        Node nweNode=new Node(value);
+        if(head.next!=null){
+            nweNode.next=head;
+            System.out.println(head);
+        }
+        head=nweNode;
+        System.out.println(head);
+        System.out.println(value);
+    }
+    public void insertbefore(int valueNode,int newValuebefore){
+        Node nweNode=new Node(newValuebefore);
+        Node current=head;
+        if(head!=null){
+            nweNode.next=head;
+            if(current.valueNode==valueNode){
+                //current=newValuebefore;
+            }
+            System.out.println(head);
+        }
+        current=current.next;
+        System.out.println(head);
+
+    }
+    public void insertAfter(int valueNode,int newValueAfter){
+        Node nweNode=new Node(newValueAfter);
+        Node current=head;
+        if(current.valueNode!=valueNode){
+            current=current.next;
+
+            System.out.println(head);
+        }
+        nweNode.next=current.next;
+        current.next=nweNode;
+        System.out.println(head);
+
+    }
     }
