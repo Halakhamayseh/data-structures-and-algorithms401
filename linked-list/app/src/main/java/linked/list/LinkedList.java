@@ -76,5 +76,18 @@ public class LinkedList {
            // n=n.next;
       //  }
    // }
+    public int linkedlistkth(int k) {
+        int length = 0;
+        Node value = head;
+
+        for (int i = 0; value != null; i++) {
+            value = value.next;
+            length++;
+        }
+        value = head;
+        for(int i=1;i<length-k+1;i++){
+            value=value.next;
+        }return value.valueNode;
+    }
 
     }

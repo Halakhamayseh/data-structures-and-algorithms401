@@ -8,3 +8,4 @@
 |2D ARRAY|[link](code04/README.md)|
 |Linked list|[link](linked-list/README.md)|
 |linked-list-insertions|[link](linked-list/linked-list-insertions.md)|
+|linked-list-kth|[link](linked-list/linked-list-kth.md)|
