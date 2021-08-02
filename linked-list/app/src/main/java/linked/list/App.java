@@ -13,9 +13,14 @@ public class App {
         LinkedList newList = new LinkedList();
         newList.insert(3);
         newList.insert(1);
-        newList.toString();
-        System.out.println(newList.toString());
-
-        System.out.println(newList.includes(3));
+        //newList.toString();
+        newList.append(5);
+        newList.insertAfter(1,4);
+        newList.insertbefore(3,0);
+        newList.append(7);
+        //System.out.println(newList.linkedlistkth(1));
+        //newList.print(newList.head);//to show node
+        //System.out.println(newList.includes(3));
+        newList.append(11);
     }
 }
