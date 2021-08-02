@@ -7,3 +7,4 @@
 |BinarySearch|[link](code03/README.md)|
 |2D ARRAY|[link](code04/README.md)|
 |Linked list|[link](linked-list/README.md)|
+|linked-list-insertions|[link](linked-list/linked-list-insertions.md)|
