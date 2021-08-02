@@ -6,4 +6,5 @@
 |array-insert-shift|[link](code02/README.md)|
 |BinarySearch|[link](code03/README.md)|
 |2D ARRAY|[link](code04/README.md)|
-|Linked list|[link](code05/README.md)|
+|Linked list|[link](linked-list/README.md)|
+|linked-list-insertions|[link](linked-list/linked-list-insertions.md)|

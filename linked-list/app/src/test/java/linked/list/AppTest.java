@@ -15,5 +15,8 @@ class AppTest {
         assertEquals(3,funcTest.head.valueNode);
         assertTrue(funcTest.includes(3));
         //assertEquals({2});
+        //@Test void testbefore(){
+
+        //}
     }
 }

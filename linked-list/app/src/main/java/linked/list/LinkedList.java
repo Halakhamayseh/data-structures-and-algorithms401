@@ -1,5 +1,7 @@
 package linked.list;
 
+import java.util.Arrays;
+
 public class LinkedList {
     Node head;
     public void insert(int num){
@@ -32,11 +34,11 @@ public class LinkedList {
         Node nweNode=new Node(value);
         if(head.next!=null){
             nweNode.next=head;
-            System.out.println(head);
+            //System.out.println(head.valueNode);
         }
         head=nweNode;
-        System.out.println(head);
-        System.out.println(value);
+       // System.out.println(nweNode.valueNode);
+        //System.out.println(value);
     }
     public void insertbefore(int valueNode,int newValuebefore){
         Node nweNode=new Node(newValuebefore);
@@ -44,12 +46,15 @@ public class LinkedList {
         if(head!=null){
             nweNode.next=head;
             if(current.valueNode==valueNode){
-                //current=newValuebefore;
+                //current-1=newValuebefore;
+                nweNode.next=head;
+                head=nweNode;
+                System.out.println(nweNode.valueNode);
             }
-            System.out.println(head);
+            //System.out.println(head);
         }
         current=current.next;
-        System.out.println(head);
+        //System.out.println(head);
 
     }
     public void insertAfter(int valueNode,int newValueAfter){
@@ -62,7 +67,14 @@ public class LinkedList {
         }
         nweNode.next=current.next;
         current.next=nweNode;
-        System.out.println(head);
+        System.out.println(nweNode);
 
     }
+    //public void print(Node n) {
+       // while (n!=null){
+          //  System.out.println(n.valueNode+ " ");to print all node to see results & debuging the code
+           // n=n.next;
+      //  }
+   // }
+
     }
