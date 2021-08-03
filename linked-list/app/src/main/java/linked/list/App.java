@@ -14,13 +14,26 @@ public class App {
         newList.insert(3);
         newList.insert(1);
         //newList.toString();
-        newList.append(5);
+        //newList.append(5);
         newList.insertAfter(1,4);
         newList.insertbefore(3,0);
-        newList.append(7);
+       newList.append(7);
         //System.out.println(newList.linkedlistkth(1));
-        //newList.print(newList.head);//to show node
+      //newList.print(newList.head);//to show node
         //System.out.println(newList.includes(3));
-        newList.append(11);
+       //newList.append(11);
+        LinkedList list1=new LinkedList();
+        list1.insert(1);
+        list1.insert(2);
+        list1.insert(3);
+        LinkedList list2=new LinkedList();
+        list2.insert(4);
+        list2.insert(5);
+        list2.insert(6);
+        LinkedList list3=new LinkedList();
+       // list1.toString();
+       // list2.toString();
+        ;
+       // System.out.println(list3.zip(list2,list1));
     }
 }

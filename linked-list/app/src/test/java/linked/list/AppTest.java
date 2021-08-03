@@ -10,13 +10,28 @@ class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-        LinkedList funcTest =new LinkedList();
+        LinkedList funcTest = new LinkedList();
         funcTest.insert(3);
-        assertEquals(3,funcTest.head.valueNode);
+        assertEquals(3, funcTest.head.valueNode);
         assertTrue(funcTest.includes(3));
-        //assertEquals({2});
-        //@Test void testbefore(){
-
-        //}
     }
+        @Test
+                void appendtest() {
+            LinkedList newtest=new LinkedList();
+            newtest.append(4);
+            Node newNode = newtest.head;
+            String result = "";
+            while (newNode != null) {
+                result += "{" + newNode.valueNode + "}->";
+                newNode = newNode.next;
+            }
+            result += "null";
+            String ex = "{4}->null";
+            assertEquals(ex, result);
+            //assertEquals({2});
+            //@Test void testbefore(){
+
+            //}
+        }
+
 }
