@@ -33,7 +33,7 @@ public class App {
         LinkedList list3=new LinkedList();
        // list1.toString();
        // list2.toString();
-        list3.zip(list2,list1);
-        System.out.println(list3.toString());
+        ;
+       // System.out.println(list3.zip(list2,list1));
     }
 }

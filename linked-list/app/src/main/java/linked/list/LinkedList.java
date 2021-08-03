@@ -124,7 +124,7 @@ public class LinkedList {
         return value.valueNode;
     }
 
-    public Node zip(LinkedList list1, LinkedList list2) {
+    public LinkedList zip(LinkedList list1, LinkedList list2) {
         Node currList1 = list1.head;
         Node currList2 = list2.head;
         if (currList1 == null) {
@@ -140,6 +140,6 @@ public class LinkedList {
 
         }
         list1.head=currList1;
-        return list2.head;
+       return list2;
     }
 }

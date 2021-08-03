@@ -9,3 +9,4 @@
 |Linked list|[link](linked-list/README.md)|
 |linked-list-insertions|[link](linked-list/linked-list-insertions.md)|
 |linked-list-kth|[link](linked-list/linked-list-kth.md)|
+|linked-list-zip|[link](linked-list/linked-list-zip.md)|
