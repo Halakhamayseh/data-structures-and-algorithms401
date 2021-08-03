@@ -6,5 +6,6 @@ Node next;// To point nextNode
 public Node(int num){
 
     this.valueNode=num;
+    this.next=null;
 }
 }
