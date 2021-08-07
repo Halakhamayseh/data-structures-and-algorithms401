@@ -14,7 +14,7 @@ public class Stack <t> {
 
     }
 
-    ///////////
+    ///////////wrong ways ////
 //    public t pop() {
 //        t popvalue = null;
 //        if (top != null) {
@@ -46,7 +46,7 @@ public class Stack <t> {
         }
         return popvalue;
     }
-
+///////////////wrong ways to check
 //    public t peek() {
 //        if (top != null) {
 //            return (t) top.nodeValue;

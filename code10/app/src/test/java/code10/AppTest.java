@@ -11,4 +11,60 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void testpush() {
+        Stack<String> newobj=new Stack<>();
+        System.out.println(newobj.isEmty());
+        newobj.push("H");
+        newobj.push("m");
+        newobj.push("n");
+       //output //System.out.println(newobj.top.nodeValue);
+        String res="n";
+        assertEquals(false,newobj.isEmty());
+        assertEquals(res,newobj.top.nodeValue);
+    }
+    @Test void testpop() {
+        Stack<String> newobj=new Stack<>();
+
+        newobj.push("m");
+        newobj.push("l");
+        newobj.pop();
+        newobj.pop();
+
+        assertEquals(true,newobj.isEmty());
+    }
+    @Test void testpeekStack() {
+        Stack<String> newobj=new Stack<>();
+        newobj.push("H");
+        newobj.push("m");
+        String res="m";
+        assertEquals(res,newobj.peek());
+    }
+    @Test void enqueue() {
+        Queue<String> newobj2=new Queue<>();
+        newobj2.enqueue("H");
+        newobj2.enqueue("m");
+        newobj2.enqueue("d");
+        String resfront="H";
+        String resrear="d";
+        assertEquals(false,newobj2.isEmty());
+        assertEquals(resfront,newobj2.front.nodeValue);
+        assertEquals(resrear,newobj2.rear.nodeValue);
+    }
+    @Test void dequeue() {
+        Queue<String> newobj2=new Queue<>();
+        newobj2.enqueue("H");
+        newobj2.enqueue("m");
+        newobj2.dequeue();
+        newobj2.dequeue();
+        assertEquals(true,newobj2.isEmty());
+    }
+    @Test void testpeekQueue() {
+        Queue<String> newobj2=new Queue<>();
+        newobj2.enqueue("H");
+        newobj2.enqueue("m");
+        newobj2.enqueue("d");
+        newobj2.dequeue();
+        String res="m";
+        assertEquals(res,newobj2.peek());
+    }
 }

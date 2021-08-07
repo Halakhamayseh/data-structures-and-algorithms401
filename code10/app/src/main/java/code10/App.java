@@ -3,6 +3,8 @@
  */
 package code10;
 
+import java.util.Arrays;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -19,13 +21,16 @@ public class App {
         System.out.println(newobj.isEmty());
         newobj.push("H");
         newobj.push("m");
-        newobj.push("o");
+        newobj.push("n");
+       ///Arrays.toString(newobj.toArray());
+       // for() System.out.println( + "");
        System.out.println(newobj.top.nodeValue);
        // System.out.println(newobj.isEmty());
        newobj.pop();
-       newobj.peek();
-        System.out.println("ll");
-        System.out.println(newobj.print());
+        System.out.println(newobj.peek());
+        //System.out.println(newobj.print());
+        System.out.println(newobj.isEmty());
+
        // System.out.println(newobj.top.nodeValue);
 //        try {
 //            System.out.println(newobj.pop());
@@ -33,6 +38,20 @@ public class App {
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
+        Queue<String> newobj2=new Queue<>();
+        System.out.println(newobj2.isEmty());
+        newobj2.enqueue("H");
+        newobj2.enqueue("m");
+        newobj2.enqueue("d");
+        ///Arrays.toString(newobj.toArray());
+        // for() System.out.println( + "");
+        //System.out.println(newobj2.front.nodeValue);
+        //System.out.println(newobj2.rear.nodeValue);
+        // System.out.println(newobj.isEmty());
+        newobj2.dequeue();
+        System.out.println(newobj2.peek());
+       // System.out.println(newobj2.print());
+        System.out.println(newobj2.isEmty());
 
     }
 }
