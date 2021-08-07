@@ -54,6 +54,7 @@ public class LinkedList {
     // System.out.println(nweNode.valueNode);
     //System.out.println(value);
     //}
+    ////////////////////////code 06////////////////////////////////////////
     public void append(int value) {
         Node nweNode = new Node(value);
 
@@ -76,7 +77,6 @@ public class LinkedList {
         if (head != null) {
             nweNode.next = head;
             if (current.valueNode == valueNode) {
-                //current-1=newValuebefore;
                 nweNode.next = head;
                 head = nweNode;
                 System.out.println(nweNode.valueNode);
@@ -101,14 +101,14 @@ public class LinkedList {
         System.out.println(nweNode);
 
     }
-
+//////////////////just to test some function//////////////////////////////////////
     public void print(Node n) {
         while (n != null) {
             System.out.println(n.valueNode + " ");//to print all node to see results & debuging the code
             n = n.next;
         }
     }
-
+////////////////////code 07/////////////////////////////////
     public int linkedlistkth(int k) {
         int length = 0;
         Node value = head;
@@ -123,12 +123,15 @@ public class LinkedList {
         }
         return value.valueNode;
     }
-
+/////////////////////////////code08////////////////////////////////
     public LinkedList zip(LinkedList list1, LinkedList list2) {
+        LinkedList mergedLinkedlinkedlist=new LinkedList();
         Node currList1 = list1.head;
         Node currList2 = list2.head;
+        //while (currList1!=null || currList1)
         if (currList1 == null) {
-            insert(currList2.valueNode);
+            //insert(currList2.valueNode);
+            list1.append();
         } else if (currList2 == null) {
             insert(currList1.valueNode);
         } else if (currList1 != null && currList2 != null) {
@@ -141,5 +144,25 @@ public class LinkedList {
         }
         list1.head=currList1;
        return list2;
+    }
+    //////////////////////code09////////////////////////////////////////
+    public static LinkedList reversedLinkedList(LinkedList listone) {
+        //LinkedList reversedLinkedListArray = new LinkedList();
+        Node curr1 = listone.head ;
+        Node next=null;
+        //Node currFinall=listone.tail;
+        // Node next=head.next;
+        Node previce = null;
+        while (curr1 != null) {
+            next=curr1.next;
+           curr1.next = previce;
+            //curr1=previce.next;
+           previce=curr1;
+           curr1=next;
+
+        }
+        listone.head=previce;
+       // System.out.println((listone.head.valueNode));
+        return listone;
     }
 }

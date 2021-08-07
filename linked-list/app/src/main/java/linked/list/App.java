@@ -35,5 +35,14 @@ public class App {
        // list2.toString();
         ;
        // System.out.println(list3.zip(list2,list1));
+
+      //System.out.println(LinkedList.reverseList(list1).toString());
+       // System.out.println(reversedLinkedList(list2).toString());
+        //reversedLinkedList(list1).to
+        LinkedList list4 = new LinkedList();
+        list4.append(1);
+        list4.append(2);
+        list4.append(3);
+        System.out.println(LinkedList.reversedLinkedList(list4).toString());
     }
 }

@@ -10,11 +10,15 @@ class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    }
+        ///////////////////////test code 05/////////////////
+        @Test void testCode05(){
         LinkedList funcTest = new LinkedList();
         funcTest.insert(3);
         assertEquals(3, funcTest.head.valueNode);
         assertTrue(funcTest.includes(3));
-    }
+        }
+    /////////////////////////test code 06///////////////
         @Test
                 void appendtest() {
             LinkedList newtest=new LinkedList();
