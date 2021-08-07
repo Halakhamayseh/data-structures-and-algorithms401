@@ -128,23 +128,29 @@ public class LinkedList {
         LinkedList mergedLinkedlinkedlist=new LinkedList();
         Node currList1 = list1.head;
         Node currList2 = list2.head;
-        //while (currList1!=null || currList1)
-        if (currList1 == null) {
-            //insert(currList2.valueNode);
-            list1.append();
-        } else if (currList2 == null) {
-            insert(currList1.valueNode);
-        } else if (currList1 != null && currList2 != null) {
-            list2.insertbefore(currList1.valueNode, currList2.valueNode);
-            currList2 = currList2.next;
-            currList1 = currList1.next;
-        } else if (currList1 != null){
-            list2.append(currList1.valueNode);
+       while (currList1!=null || currList2!=null) {
+           if (currList1 == null) {
+               //insert(currList2.valueNode);
+               mergedLinkedlinkedlist.append(currList2.valueNode);
+               currList2 = currList2.next;
+           } else if (currList2 == null) {
+               mergedLinkedlinkedlist.append(currList1.valueNode);
+               currList1 = currList1.next;
+           } //else if (currList1 == null && currList2 == null)
+           else {
+               //list2.insertbefore(currList1.valueNode, currList2.valueNode);
+               // currList2 = currList2.next;
+               //currList1 = currList1.next;
+               mergedLinkedlinkedlist.append(currList1.valueNode);
+               mergedLinkedlinkedlist.append(currList2.valueNode);
+               currList1 = currList1.next;
+               currList2 = currList2.next;
+           }
+       }  //list1.head=currList1;
+        return mergedLinkedlinkedlist;
+       }
 
-        }
-        list1.head=currList1;
-       return list2;
-    }
+
     //////////////////////code09////////////////////////////////////////
     public static LinkedList reversedLinkedList(LinkedList listone) {
         //LinkedList reversedLinkedListArray = new LinkedList();
