@@ -10,11 +10,29 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        Stack<String> newObject=new Stack<>();
-Stack<String> newobj=new Stack<>();
-newobj.push("H");
-        newobj.push("a");
-       System.out.println(newObject.top.nodeValue);
+
+//        Stack<String> newObject=new Stack<>();
+//        newObject.push("m");
+//        newObject.push("o");
+//        System.out.println(newObject.top.nodeValue);
+        Stack<String> newobj=new Stack<>();
         System.out.println(newobj.isEmty());
+        newobj.push("H");
+        newobj.push("m");
+        newobj.push("o");
+       System.out.println(newobj.top.nodeValue);
+       // System.out.println(newobj.isEmty());
+       newobj.pop();
+       newobj.peek();
+        System.out.println("ll");
+        System.out.println(newobj.print());
+       // System.out.println(newobj.top.nodeValue);
+//        try {
+//            System.out.println(newobj.pop());
+//            System.out.println(newobj.top.nodeValue);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
     }
 }

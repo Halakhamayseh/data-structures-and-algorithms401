@@ -6,7 +6,7 @@ public class Node<T> {
 
     public Node(T nodeValue) {
         this.nodeValue = nodeValue;
-       this.next = null;
+       //this.next = null;
     }
 
 }

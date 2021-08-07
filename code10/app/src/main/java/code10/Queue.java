@@ -13,6 +13,21 @@ public class Queue<t> {
            rear=newnodeQueue;
        }
     }
+    public t dequeue() {
+        t dequeuevalue = null;
+        if (front != null) {
+            dequeuevalue = (t) front.nodeValue;
+            dequeuevalue = (t) front.next;
+        } else {
+            try {
+                throw new Exception("throw exception there some thing Wrong");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        return dequeuevalue;
+    }
     public t peek() {
         if (front!=null){
            return  (t) front.nodeValue;
@@ -26,4 +41,9 @@ public class Queue<t> {
             return true;
         } return false;
     }
+//    public String show() {
+//        if (front == null) {
+//            return true;
+//        } return false;
+//    }
 }
