@@ -43,6 +43,30 @@ public class App {
         list4.append(1);
         list4.append(2);
         list4.append(3);
-        System.out.println(LinkedList.reversedLinkedList(list4).toString());
+       // System.out.println(LinkedList.reversedLinkedList(list4).toString());
+
+
+        //list2.insertAfter(5,2);
+        //list2.insertbefore(6,3);
+        //System.out.println(list2.includes(5));
+        System.out.println(list2.toString());
+       System.out.println((list2.linkedlistkth(3)));
+//        LinkedList newtest=new LinkedList();
+//        newtest.append(4);
+//        newtest.append(5);
+//        newtest.append(7);
+//        newtest.insertAfter(5,2);
+//        System.out.println(newtest.toString());
+        ////
+//        LinkedList list44 = new LinkedList();
+//        list44.append(1);
+//        list44.append(2);
+//        list44.append(3);
+//        LinkedList list55 = new LinkedList();
+//        list55.append(11);
+//        list55.append(22);
+//        list55.append(33);
+//        LinkedList listmerage = new LinkedList();
+//        System.out.println(listmerage.zip(list44,list55));
     }
 }

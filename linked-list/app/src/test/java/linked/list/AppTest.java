@@ -18,7 +18,7 @@ class AppTest {
         assertEquals(3, funcTest.head.valueNode);
         assertTrue(funcTest.includes(3));
         }
-    /////////////////////////test code 06///////////////
+    /////////////////////////test code 06 07 08 ///////////////
         @Test
                 void appendtest() {
             LinkedList newtest=new LinkedList();
@@ -37,5 +37,41 @@ class AppTest {
 
             //}
         }
+    @Test
+    void insertAftertest() {
+        LinkedList newtest=new LinkedList();
+        newtest.append(4);
+        newtest.append(5);
+        newtest.append(7);
+        newtest.insertAfter(5,2);
+        newtest.toString();
+        String res="{4}->{5}->{2}->{7}->null";
+        assertEquals(res,newtest.toString());
+    }
+    @Test
+    void linkedlistkthtest() {
+        LinkedList newtest2=new LinkedList();
+        newtest2.append(1);
+        newtest2.append(0);
+        newtest2.append(3);
+        //newtest.toString();
+        newtest2.linkedlistkth(2);
+        String res="0";
+        assertEquals(res,newtest2.linkedlistkth(2));
+    }
+    @Test
+    void ziptest() {
+        LinkedList list44 = new LinkedList();
+        list44.append(1);
+        list44.append(2);
+        list44.append(3);
+        LinkedList list55 = new LinkedList();
+        list55.append(11);
+        list55.append(22);
+        list55.append(33);
+        LinkedList listmerage = new LinkedList();
+        String res="{1}->{11}->{2}->{22}->{3}->{33}->null";
+        assertEquals(res,listmerage.zip(list44,list55).toString());
+    }
 
 }
