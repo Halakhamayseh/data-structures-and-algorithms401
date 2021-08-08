@@ -10,7 +10,7 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
 
 //        Stack<String> newObject=new Stack<>();
@@ -24,12 +24,12 @@ public class App {
         newobj.push("n");
        ///Arrays.toString(newobj.toArray());
        // for() System.out.println( + "");
-       System.out.println(newobj.top.nodeValue);
+     //  System.out.println(newobj.top.nodeValue);
        // System.out.println(newobj.isEmty());
        newobj.pop();
-        System.out.println(newobj.peek());
+      //  System.out.println(newobj.peek());
         //System.out.println(newobj.print());
-        System.out.println(newobj.isEmty());
+       // System.out.println(newobj.isEmty());
 
        // System.out.println(newobj.top.nodeValue);
 //        try {
@@ -39,7 +39,7 @@ public class App {
 //            e.printStackTrace();
 //        }
         Queue<String> newobj2=new Queue<>();
-        System.out.println(newobj2.isEmty());
+        //System.out.println(newobj2.isEmty());
         newobj2.enqueue("H");
         newobj2.enqueue("m");
         newobj2.enqueue("d");
@@ -48,10 +48,15 @@ public class App {
         //System.out.println(newobj2.front.nodeValue);
         //System.out.println(newobj2.rear.nodeValue);
         // System.out.println(newobj.isEmty());
-        newobj2.dequeue();
-        System.out.println(newobj2.peek());
+       // newobj2.dequeue();
+       // System.out.println(newobj2.peek());
        // System.out.println(newobj2.print());
-        System.out.println(newobj2.isEmty());
+       // System.out.println(newobj2.isEmty());
+        stackQueuePseudo<Integer> newobjpesudo=new stackQueuePseudo<>();
+        newobjpesudo.enQueue(1);
+        newobjpesudo.enQueue(2);
+        System.out.println(newobjpesudo.firstS.toString());
 
     }
+
 }
