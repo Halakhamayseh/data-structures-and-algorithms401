@@ -67,4 +67,23 @@ class AppTest {
         String res="m";
         assertEquals(res,newobj2.peek());
     }
+    @Test void code12() {
+                AnimalShelter<Animal>enQSh=new AnimalShelter<Animal>();
+                Cat cat=new Cat("cat1");
+                Dog dog=new Dog("Dog1");
+                Dog dog2=new Dog("Dog2");
+                enQSh.enqueue(cat);
+                enQSh.enqueue(dog);
+                enQSh.enqueue(dog2);
+                String resfront="cat1";
+                String resrear="Dog2";
+              assertEquals(resfront,enQSh.front.nodeValue.animalName);
+              assertEquals(resrear,enQSh.rear.nodeValue.animalName);
+                //System.out.println(enQSh.front.nodeValue.animalName);
+                //System.out.println(enQSh.dequeue().animalName);
+        String resdequeue="Dog1";
+        enQSh.dequeue();
+        assertEquals(resdequeue,enQSh.front.nodeValue.animalName);
+    }
+
 }
