@@ -17,16 +17,16 @@ public class App {
 //        newObject.push("m");
 //        newObject.push("o");
 //        System.out.println(newObject.top.nodeValue);
-        Stack<String> newobj=new Stack<>();
-        System.out.println(newobj.isEmty());
-        newobj.push("H");
-        newobj.push("m");
-        newobj.push("n");
+        //Stack<String> newobj=new Stack<>();
+       // System.out.println(newobj.isEmty());
+        //newobj.push("H");
+        //newobj.push("m");
+        //newobj.push("n");
        ///Arrays.toString(newobj.toArray());
        // for() System.out.println( + "");
      //  System.out.println(newobj.top.nodeValue);
        // System.out.println(newobj.isEmty());
-       newobj.pop();
+      // newobj.pop();
       //  System.out.println(newobj.peek());
         //System.out.println(newobj.print());
        // System.out.println(newobj.isEmty());
@@ -52,11 +52,30 @@ public class App {
        // System.out.println(newobj2.peek());
        // System.out.println(newobj2.print());
        // System.out.println(newobj2.isEmty());
-        stackQueuePseudo<Integer> newobjpesudo=new stackQueuePseudo<>();
-        newobjpesudo.enQueue(1);
-        newobjpesudo.enQueue(2);
-        System.out.println(newobjpesudo.firstS.toString());
+        //stackQueuePseudo<Integer> newobjpesudo=new stackQueuePseudo<>();
+//        newobjpesudo.enQueue(1);
+//        newobjpesudo.enQueue(2);
+//        System.out.println(newobjpesudo.firstS.toString());
+//12//
+        AnimalShelter<Animal>enQSh=new AnimalShelter<Animal>();
+        Cat cat=new Cat("cat1");
+        Dog dog=new Dog("Dog1");
+        //AnimalShelter enQSh=new AnimalShelter();
+       //Animal cat=new Cat("CAT NAME");
+        enQSh.enqueue(dog);
+        enQSh.enqueue(cat);
 
+        System.out.println(enQSh.front.nodeValue.animalName);
+        //System.out.println(enQSh.toString());
+        //System.out.println(cat.animalName);
+
+        System.out.println(enQSh.dequeue().animalName);
+
+       //System.out.println(enQSh.rear.nodeValue);
+      //System.out.println(enQSh.toString());
+        //Animal cat2=new Animal("CAT2 NAME2");
+       // enQSh.enqueue(cat2);
+     //System.out.println(enQSh.toString());
     }
 
 }
