@@ -1,9 +1,9 @@
 package code15;
 
 public class Node<t> {
-    private t nodeValue;
-    private Node<t> left;
-   private Node<t> right;
+    public t nodeValue;
+    public Node<t> left;
+   public Node<t> right;
 
     public Node(t nodeValue) {
         this.nodeValue = nodeValue;
