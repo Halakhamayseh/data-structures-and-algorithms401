@@ -8,7 +8,11 @@ public class App {
         return "Hello World!";
     }
 
+
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        BinarySearchTree<Integer> firstObj=new BinarySearchTree<>();
+        firstObj.addFuction(11);
+        System.out.println(firstObj.containsFunction(11));
     }
 }

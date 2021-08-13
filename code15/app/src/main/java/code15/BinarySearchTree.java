@@ -14,11 +14,12 @@ public class BinarySearchTree<t> extends BinaryTree{
             root.right=addFuctionHelper(root.right,value);
         }return root;
     }
-    public boolean containsFunction(Node root,t value){
+    public boolean containsFunction(t value){
       // Node newNode=root;
         while (root!=null){
             if((int)root.nodeValue>(int)value){
                 root=root.left;
+                System.out.println((int)root.nodeValue);
                 return false;
             }
             if((int)root.nodeValue>(int)value){
@@ -29,8 +30,7 @@ public class BinarySearchTree<t> extends BinaryTree{
                 return true;
             }
 
-        }root.left=addFuctionHelper(root.left,value);
-        root.right=addFuctionHelper(root.right,value);
+        }
         return false;
     }
 

@@ -10,5 +10,28 @@ class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
     }
+    @Test void testSingleRoot(){
+       BinarySearchTree<Integer> firstObj=new BinarySearchTree<>();
+        firstObj.root=new Node(4);
+        //firstObj.root(new Node(5));
+assertEquals(4,firstObj.root.nodeValue);
+    }
+//    @Test void testTraversal(){
+//        BinarySearchTree<Integer> firstObj=new BinarySearchTree<>();
+//       firstObj.root=new Node(4);
+//       firstObj.root.left=new Node(2);
+//        firstObj.root.right=new Node(9);
+//      //assertEquals(2,firstObj.root.left.nodeValue);
+//        //assertEquals(9,firstObj.root.right.nodeValue);
+//       assertEquals("[4,2,9]",firstObj.inOrder);
+//
+//    }
+@Test void testadd(){
+    BinarySearchTree<Integer> firstObj=new BinarySearchTree<>();
+    firstObj.addFuction(11);
+    assertEquals(true,firstObj.containsFunction(11));
+
+}
 }
