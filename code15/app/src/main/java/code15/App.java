@@ -13,6 +13,11 @@ public class App {
         System.out.println(new App().getGreeting());
         BinarySearchTree<Integer> firstObj=new BinarySearchTree<>();
         firstObj.addFuction(11);
+        firstObj.addFuction(12);
+        firstObj.addFuction(20);
         System.out.println(firstObj.containsFunction(11));
+        System.out.println(firstObj.containsFunction(12));
+        System.out.println(firstObj.containsFunction(20));
+        System.out.println(firstObj.containsFunction(15));
     }
 }
