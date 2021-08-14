@@ -15,22 +15,28 @@ public class BinarySearchTree<t> extends BinaryTree{
         }return root;
     }
     public boolean containsFunction(t value){
+      //Node root=new Node(value);
+      return containsFunctionHelper(root,value);
+    }
+    public boolean containsFunctionHelper(Node root,t value){
       // Node newNode=root;
-        while (root!=null){
+        if (root==null) {
+            return false;
+        }
             if((int)root.nodeValue>(int)value){
-                root=root.left;
+               // root=root.left;
                 System.out.println((int)root.nodeValue);
-                return false;
+                return containsFunctionHelper(root.left,value);
             }
-            if((int)root.nodeValue>(int)value){
-                root=root.right;
-                return false;
+            if((int)root.nodeValue<(int)value){
+               // root=root.right;
+                return containsFunctionHelper(root.right,value);
             }
             if((int)root.nodeValue==(int)value){
                 return true;
             }
 
-        }
+
         return false;
     }
 

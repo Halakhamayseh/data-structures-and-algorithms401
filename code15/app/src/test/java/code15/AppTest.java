@@ -31,7 +31,12 @@ assertEquals(4,firstObj.root.nodeValue);
 @Test void testadd(){
     BinarySearchTree<Integer> firstObj=new BinarySearchTree<>();
     firstObj.addFuction(11);
+    firstObj.addFuction(15);
+    firstObj.addFuction(20);
     assertEquals(true,firstObj.containsFunction(11));
+    assertEquals(true,firstObj.containsFunction(20));
+    assertEquals(true,firstObj.containsFunction(15));
+    assertEquals(false,firstObj.containsFunction(22));
 
 }
 }
