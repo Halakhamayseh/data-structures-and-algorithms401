@@ -17,8 +17,8 @@ public class App {
         firstObj.addFuction(20);
        // System.out.println(firstObj.containsFunction(11));
         //System.out.println(firstObj.containsFunction(12));
-        //System.out.println(firstObj.containsFunction(20));
-        //System.out.println(firstObj.containsFunction(15));
+       // System.out.println(firstObj.containsFunction(20));
+      // System.out.println(firstObj.containsFunction(15));
 
         BinaryTree<Integer> secObj=new BinaryTree<>();
         secObj.root = new Node(2);
