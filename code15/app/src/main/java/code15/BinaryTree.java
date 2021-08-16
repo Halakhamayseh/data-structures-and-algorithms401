@@ -56,23 +56,24 @@ public class BinaryTree <t>{
             return postOrder;
         }
     public int maxNumber(Node <Integer> rootNode) {
-        if(rootNode==null){
+        if(rootNode==null) {
             return Integer.MIN_VALUE;
+        }
             //throw new Exception("empyt Tree");
             //return -1;
-        }
+
         int maxNum=rootNode.nodeValue;
         int maxNumLeft= maxNumber(rootNode.left);
         int maxNumRight=maxNumber(rootNode.right);
 
-        if(maxNumLeft>maxNum);
-        maxNum=maxNumLeft;
-        if(maxNumRight>maxNum);
-        maxNum=maxNumRight;
+        if(maxNumLeft>maxNum){
+        maxNum=maxNumLeft;}
+        if(maxNumRight>maxNum){
+        maxNum=maxNumRight;}
 
 //       if(rootNode.left!=null);
 //       maxNum=Math.max(maxNum,maxB(rootNode.left));
-       // System.out.println(maxNum);
+    //System.out.println(maxNum);
         return maxNum;
     }
 }

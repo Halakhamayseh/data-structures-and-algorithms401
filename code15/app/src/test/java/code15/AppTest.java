@@ -39,4 +39,16 @@ assertEquals(4,firstObj.root.nodeValue);
     assertEquals(false,firstObj.containsFunction(22));
 
 }
+@Test void code16(){
+    BinaryTree<Integer> secObj=new BinaryTree<>();
+    secObj.root = new Node(2);
+    secObj.root.left = new Node(7);
+    secObj.root.right = new Node(5);
+    secObj.root.left.right = new Node(6);
+    secObj.root.left.right.left = new Node(1);
+    secObj.root.left.right.right = new Node(11);
+    secObj.root.right.right = new Node(9);
+    secObj.root.right.right.left = new Node(4);
+    assertEquals(11,secObj.maxNumber(secObj.root));
+}
 }
