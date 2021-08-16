@@ -1,8 +1,9 @@
 package code15;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class BinaryTree <t>{
+public class BinaryTree <t> {
    public ArrayList<t>preOrder=new ArrayList<>();
     public ArrayList<t>inOrder=new ArrayList<>();
    public ArrayList<t>postOrder=new ArrayList<>();
@@ -76,4 +77,5 @@ public class BinaryTree <t>{
     //System.out.println(maxNum);
         return maxNum;
     }
+
 }

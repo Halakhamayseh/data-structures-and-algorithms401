@@ -42,5 +42,13 @@ public class App {
        // secObj.root.right.right.left=new Node(7);
   System.out.println(secObj.maxNumber(secObj.root));
         //System.out.println(secObj.root.nodeValue);
+        BinarySearchTree<Integer>newTree =new BinarySearchTree<>();
+        newTree.addFuction(1);
+        newTree.addFuction(2);
+        newTree.addFuction(3);
+        newTree.addFuction(4);
+        newTree.addFuction(5);
+        System.out.println(newTree.traversalFunction(newTree));
     }
+
 }

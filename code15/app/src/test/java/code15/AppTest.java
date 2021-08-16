@@ -4,6 +4,10 @@
 package code15;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -50,5 +54,19 @@ assertEquals(4,firstObj.root.nodeValue);
     secObj.root.right.right = new Node(9);
     secObj.root.right.right.left = new Node(4);
     assertEquals(11,secObj.maxNumber(secObj.root));
+}
+@Test void code17(){
+    BinarySearchTree<Integer>newTree =new BinarySearchTree<>();
+    newTree.addFuction(1);
+    newTree.addFuction(2);
+    newTree.addFuction(3);
+    newTree.addFuction(4);
+    newTree.addFuction(5);
+//    int[] arrayList= new int[5];
+//    arrayList= new int[]{1, 2, 3, 4, 5};
+    String res="[1, 2, 3, 4, 5]";
+    //System.out.println(newTree.traversalFunction(newTree));
+    assertEquals(res,newTree.traversalFunction(newTree));
+    ///test Didnot work
 }
 }
