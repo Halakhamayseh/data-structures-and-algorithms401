@@ -3,7 +3,7 @@ Write a function called insertionSort
 Arguments: array
 Return: array sorted from min number to max number.
 ## Whiteboard Process
-![code26](code26.PNG)
+![sort](code26.PNG)
 
 ## Approach & Efficiency
 complexity

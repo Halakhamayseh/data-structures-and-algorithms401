@@ -1,4 +1,4 @@
-package code26;
+package sort;
 
 public class Sort {
     //  InsertionSort(int[] arr)
