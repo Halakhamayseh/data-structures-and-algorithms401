@@ -17,4 +17,5 @@
 |max|[link](code15/code16.md)|
 |tree-breadth-first|[link](code15/code17.md)|
 |InsertionSort|[link](code26/README.md)|
+|Merge-Sort|[link](code26/code27.md)|
 
