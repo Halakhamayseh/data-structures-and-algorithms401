@@ -3,16 +3,19 @@
  */
 package sort;
 
+import java.util.Arrays;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        int [] arr={8,4,23,42,16,15};
+        int [] arr={1,4,5,2};
         System.out.println(new App().getGreeting());
 //        System.out.println(Arrays.toString(insertionSortm(arr)));
 
+App.mergeSort(arr);
 
     }
 //    public static int [] insertionSortm(int[]arr){
@@ -28,4 +31,74 @@ public class App {
 //
 //        }return arr;
 //    }
+public static int[] mergeSort(int[]arr){
+
+    int n=arr.length;
+//      int[] mergeSorted= new int[n];
+    if (n>1){
+        int mid=n/2;
+        //https://www.codegrepper.com/code-examples/java/split+array+in+java//from this url know how split array by using Arrays.copyOfRange
+        int []leftPart= Arrays.copyOfRange(arr,0,mid);
+        int []rightPart= Arrays.copyOfRange(arr,mid,arr.length);
+        //{1,2,3,4}
+        mergeSort(leftPart);
+        mergeSort(rightPart);
+        merge(leftPart, rightPart, arr);
+
+    }return arr;
+
+}
+
+    public static int[] merge(int[]left,int[]right,int[]arr) {
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        while (i < left.length && j < right.length) {
+            if (left[i] <= right[j]) {
+                arr[k] = left[i];
+                i = i + 1;
+                System.out.println("inside while"+i);
+            } else {
+                arr[k] = right[j];
+                j = j + 1;
+
+            }
+            k = k + 1;
+
+        }
+        if (i == left.length) {
+            System.out.println("inside if left"+i);
+            //left part empty
+            //       set remaining entries in arr to remaining values in right
+            for (int l = j; l < right.length; l++) {
+
+                arr[k] = right[l];
+                k++;
+
+            }
+//            while (j< right.length){
+//                arr[k] = right[j];
+//             k++;
+//             j++;
+//
+//            }
+
+        }
+        else{
+            //right is empty
+            //       set remaining entries in arr to remaining values in left
+            System.out.println("inside if right"+i);
+            for (int r = i; r < left.length; r++) {
+                arr[k] = left[r];
+                k++;
+
+            }
+//            while (i< left.length){
+//                arr[k] = left[i];
+//                k++;
+//                i++;
+//
+//            }
+        }return arr;
+    }
 }

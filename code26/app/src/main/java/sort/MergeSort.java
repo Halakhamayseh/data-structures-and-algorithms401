@@ -66,6 +66,7 @@ public class MergeSort {
             if (left[i] <= right[j]) {
                 arr[k] = left[i];
                 i = i + 1;
+                System.out.println(i);
             } else {
                 arr[k] = right[j];
                 j = j + 1;
@@ -75,6 +76,7 @@ public class MergeSort {
 
         }
         if (i == left.length) {
+            System.out.println(i);
             //left part empty
             //       set remaining entries in arr to remaining values in right
             for (int l = j; l < right.length; l++) {
