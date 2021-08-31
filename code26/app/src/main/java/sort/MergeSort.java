@@ -43,12 +43,13 @@ public class MergeSort {
     public int[] mergeSort(int[]arr){
 
         int n=arr.length;
-//        int[] arrayList= new int[n];
+//      int[] mergeSorted= new int[n];
         if (n>1){
             int mid=n/2;
-            //https://wwint []leftPartw.codegrepper.com/code-examples/java/split+array+in+java//from this url know how split array by using Arrays.copyOfRange
+            //https://www.codegrepper.com/code-examples/java/split+array+in+java//from this url know how split array by using Arrays.copyOfRange
             int []leftPart= Arrays.copyOfRange(arr,0,mid);
             int []rightPart= Arrays.copyOfRange(arr,mid,arr.length);
+            //{1,2,3,4}
             mergeSort(leftPart);
             mergeSort(rightPart);
             merge(leftPart, rightPart, arr);
@@ -77,20 +78,33 @@ public class MergeSort {
             //left part empty
             //       set remaining entries in arr to remaining values in right
             for (int l = j; l < right.length; l++) {
+
                 arr[k] = right[l];
                 k++;
-                
+
             }
+//            while (j< right.length){
+//                arr[k] = right[j];
+//             k++;
+//             j++;
+//
+//            }
 
         }
            else{
                //right is empty
         //       set remaining entries in arr to remaining values in left
             for (int r = i; r < left.length; r++) {
-                arr[k] = right[r];
+                arr[k] = left[r];
                 k++;
 
             }
+//            while (i< left.length){
+//                arr[k] = left[i];
+//                k++;
+//                i++;
+//
+//            }
     }return arr;
     }
 }
