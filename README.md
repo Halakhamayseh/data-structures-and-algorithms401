@@ -18,4 +18,6 @@
 |tree-breadth-first|[link](code15/code17.md)|
 |InsertionSort|[link](code26/README.md)|
 |Merge-Sort|[link](code26/code27.md)|
-
+|Quick-Sort|[link](code28Sort/code28.md)|
+|Hashtables|[link](hashTabel30/code30.md)|
+|repeated word|[link](hashTabel30/code31.md)|

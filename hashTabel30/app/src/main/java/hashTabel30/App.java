@@ -9,14 +9,18 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        HashTable<String>newHashTable=new HashTable<>(4);
-        newHashTable.add("a","firtAdd");
-        newHashTable.add("tow","towAdd");
-        System.out.println(newHashTable.get("a"));
-        System.out.println(newHashTable.get("tow"));
+//        System.out.println(new App().getGreeting());
+//        HashTable<String>newHashTable=new HashTable<>(4);
+//        newHashTable.add("a","firtAdd");
+//        newHashTable.add("tow","towAdd");
+//        System.out.println(newHashTable.get("a"));
+//        System.out.println(newHashTable.get("tow"));
 //       newHashTable.getHash("hala");
-        System.out.println(newHashTable.contain("a"));
-        System.out.println(newHashTable.contain("b"));
+//        System.out.println(newHashTable.contain("a"));
+//        System.out.println(newHashTable.contain("b"));
+        ///////////////////////code31////////////////
+        HashmapRepeatedWord testRepeated=new HashmapRepeatedWord();
+        String test="It was a queer, sultry SUMMer , the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+        System.out.println(testRepeated.findFirstRepeatedWord(test));
     }
 }

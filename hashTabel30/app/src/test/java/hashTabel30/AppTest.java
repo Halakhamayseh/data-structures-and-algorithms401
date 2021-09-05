@@ -35,5 +35,11 @@ class AppTest {
 
 
     }
+    @Test void testCode31(){
+        HashmapRepeatedWord testRepeated=new HashmapRepeatedWord();
+        String test="It was a queer, sultry SUMMer , the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+        assertEquals("summer", testRepeated.findFirstRepeatedWord(test));
+
+    }
 
 }
