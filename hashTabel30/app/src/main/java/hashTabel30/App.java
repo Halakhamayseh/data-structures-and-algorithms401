@@ -10,5 +10,13 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        HashTable<String>newHashTable=new HashTable<>(4);
+        newHashTable.add("a","firtAdd");
+        newHashTable.add("tow","towAdd");
+        System.out.println(newHashTable.get("a"));
+        System.out.println(newHashTable.get("tow"));
+//       newHashTable.getHash("hala");
+        System.out.println(newHashTable.contain("a"));
+        System.out.println(newHashTable.contain("b"));
     }
 }
