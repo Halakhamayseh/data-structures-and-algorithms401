@@ -21,3 +21,4 @@
 |Quick-Sort|[link](code28Sort/code28.md)|
 |Hashtables|[link](hashTabel30/code30.md)|
 |repeated word|[link](hashTabel30/code31.md)|
+|tree intersection|[link](hashTabel30/code32.md)|
