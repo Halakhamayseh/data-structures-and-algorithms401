@@ -3,12 +3,38 @@
  */
 package graph;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
+
+
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        GraphAdjacencyList graphAdjacencyListTow=new GraphAdjacencyList();
+//        ArrayList arrayList=new ArrayList();
+//        arrayList.add("2");
+        ArrayList <NodeGraph>arrayListFour=new ArrayList<>();
+        ArrayList <NodeGraph>arrayListFive=new ArrayList<>();
+        NodeGraph nodeGraphF =new NodeGraph("4");
+        NodeGraph nodeGraphFi =new NodeGraph("5");
+//        GraphAdjacencyList graphAdjacencyList=new GraphAdjacencyList();
+        graphAdjacencyListTow.adjListMap.put(nodeGraphF,arrayListFour);
+        graphAdjacencyListTow.adjListMap.put(nodeGraphFi,arrayListFive);
+
+//        graphAdjacencyList.adjListMap.put(nodeGraphF,arrayList);
+        graphAdjacencyListTow.addNode("first");
+        graphAdjacencyListTow.addNode("second");
+        graphAdjacencyListTow.addNode("third");
+        graphAdjacencyListTow.addEdge(nodeGraphF,nodeGraphFi);
+//        System.out.println(graphAdjacencyList.addNode("2"));
+        System.out.println(graphAdjacencyListTow.adjListMap);
+//        System.out.println(graphAdjacencyList.getNode());
+//        System.out.println(graphAdjacencyList.size());
+//        System.out.println(graphAdjacencyList.getNeighbores(nodeGraphF));
     }
 }
