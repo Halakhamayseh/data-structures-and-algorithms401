@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -86,5 +87,71 @@ class AppTest {
     assertEquals("{NodeGraph{value=5}=[NodeGraph{value=4}], NodeGraph{value=4}=[NodeGraph{value=5}]}",graphAdjacencyListTow.adjListMap.toString());
 
 }
+
+/////////////////////// test code 36 && 38////////////////////////
+@Test void code36(){
+
+    GraphAdjacencyList graph=new GraphAdjacencyList();
+
+
+
+    NodeGraph one = graph.addNode("one");
+    NodeGraph tow =  graph.addNode("tow");
+    NodeGraph three = graph.addNode("three");
+    NodeGraph four = graph.addNode("four");
+
+
+
+    graph.addEdge(one,tow);
+    graph.addEdge(one,four);
+    graph.addEdge(tow,three);
+    graph.addEdge(tow,four);
+
+
+
+    List<NodeGraph> result = new ArrayList<>();
+    result.add(one);
+    result.add(tow);
+    result.add(three);
+    result.add(four);
+
+
+
+    assertEquals("[NodeGraph{value='one', weight=0}, NodeGraph{value='tow', weight=0}, NodeGraph{value='four', weight=0}, NodeGraph{value='three', weight=0}]",graph.breadthFirst(one).toString());
+
+}
+@Test void code37(){
+
+    GraphAdjacencyList graph=new GraphAdjacencyList();
+
+
+
+    NodeGraph one = graph.addNode("one");
+    NodeGraph tow =  graph.addNode("tow");
+    NodeGraph three = graph.addNode("three");
+    NodeGraph four = graph.addNode("four");
+
+
+
+    graph.addEdge(one,tow);
+    graph.addEdge(one,four);
+    graph.addEdge(tow,three);
+    graph.addEdge(tow,four);
+
+
+
+    List<NodeGraph> result = new ArrayList<>();
+    result.add(one);
+    result.add(tow);
+    result.add(three);
+    result.add(four);
+
+    
+
+
+    assertEquals("[NodeGraph{value='tow', weight=0}, NodeGraph{value='four', weight=0}, NodeGraph{value='one', weight=0}, NodeGraph{value='three', weight=0}]",graph.depthFirst(one).toString());
+
+}
+
 
 }

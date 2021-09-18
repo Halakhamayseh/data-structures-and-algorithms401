@@ -13,10 +13,18 @@ public class NodeGraph {
         this.value = value;
     }
 
+//    @Override
+//    public String toString() {
+//        return "NodeGraph{" +
+//                "value=" + value +
+//                '}';
+//    }
+
     @Override
     public String toString() {
         return "NodeGraph{" +
-                "value=" + value +
+                "value='" + value + '\'' +
+                ", weight=" + weight +
                 '}';
     }
 }

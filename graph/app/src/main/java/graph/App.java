@@ -4,6 +4,7 @@
 package graph;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class App {
     public String getGreeting() {
@@ -15,26 +16,105 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        GraphAdjacencyList graphAdjacencyListTow=new GraphAdjacencyList();
+//        GraphAdjacencyList graphAdjacencyListTow=new GraphAdjacencyList();
 //        ArrayList arrayList=new ArrayList();
 //        arrayList.add("2");
-        ArrayList <NodeGraph>arrayListFour=new ArrayList<>();
-        ArrayList <NodeGraph>arrayListFive=new ArrayList<>();
-        NodeGraph nodeGraphF =new NodeGraph("4");
-        NodeGraph nodeGraphFi =new NodeGraph("5");
+//        ArrayList <NodeGraph>arrayListFour=new ArrayList<>();
+//        ArrayList <NodeGraph>arrayListFive=new ArrayList<>();
+//        NodeGraph nodeGraphF =new NodeGraph("4");
+//        NodeGraph nodeGraphFi =new NodeGraph("5");
 //        GraphAdjacencyList graphAdjacencyList=new GraphAdjacencyList();
-        graphAdjacencyListTow.adjListMap.put(nodeGraphF,arrayListFour);
-        graphAdjacencyListTow.adjListMap.put(nodeGraphFi,arrayListFive);
+//        graphAdjacencyListTow.adjListMap.put(nodeGraphF,arrayListFour);
+//        graphAdjacencyListTow.adjListMap.put(nodeGraphFi,arrayListFive);
 
 //        graphAdjacencyList.adjListMap.put(nodeGraphF,arrayList);
-        graphAdjacencyListTow.addNode("first");
-        graphAdjacencyListTow.addNode("second");
-        graphAdjacencyListTow.addNode("third");
-        graphAdjacencyListTow.addEdge(nodeGraphF,nodeGraphFi);
+//        graphAdjacencyListTow.addNode("first");
+//        graphAdjacencyListTow.addNode("second");
+//        graphAdjacencyListTow.addNode("third");
+//        graphAdjacencyListTow.addEdge(nodeGraphF,nodeGraphFi);
 //        System.out.println(graphAdjacencyList.addNode("2"));
-        System.out.println(graphAdjacencyListTow.adjListMap);
+//        System.out.println(graphAdjacencyListTow.adjListMap);
 //        System.out.println(graphAdjacencyList.getNode());
 //        System.out.println(graphAdjacencyList.size());
 //        System.out.println(graphAdjacencyList.getNeighbores(nodeGraphF));
+
+        /////////////////////code37////////////
+//        ArrayList<String> cityName=new ArrayList<>();
+//        cityName.add("Irbid");
+//        cityName.add("Amman");
+//        cityName.add("Zraqa");
+//
+//        GraphAdjacencyList graph=new GraphAdjacencyList();
+//        NodeGraph nodeOne=new NodeGraph("Irbid",100);
+//        NodeGraph nodeTow=new NodeGraph("Amman",150);
+//        NodeGraph nodeThree=new NodeGraph("Zraqa",170);
+//
+//        ArrayList<NodeGraph> IrbidNigbers=new ArrayList<>();
+////        IrbidNigbers.add(nodeTow);
+//
+//        ArrayList<NodeGraph> AmmanNigbers=new ArrayList<>();
+////        IrbidNigbers.add(nodeOne);
+//
+//        ArrayList<NodeGraph> ZraqaNigbers=new ArrayList<>();
+//
+//
+//
+//        graph.adjListMap.put(nodeOne,IrbidNigbers);
+//        graph.adjListMap.put(nodeTow,AmmanNigbers);
+//        graph.adjListMap.put(nodeThree,ZraqaNigbers);
+//
+//        graph.addEdge(nodeOne,nodeTow);
+//        graph.addEdge(nodeTow,nodeOne);
+
+//       graph.businessTrip(graph,cityName);
+//        System.out.println(graph.adjListMap);
+///////////////////////////code36///////////////////
+//        GraphAdjacencyList g=new GraphAdjacencyList();
+////       GraphAdjacencyList g=new GraphAdjacencyList(); Graph g = new Graph(4);
+//        NodeGraph nodeOne=new NodeGraph("Irbid");
+//        NodeGraph nodeTow=new NodeGraph("Amman");
+//        NodeGraph nodeThree=new NodeGraph("Zraqa");
+//        g.addEdge(nodeOne, nodeTow);
+//        g.addEdge(nodeTow, nodeThree);
+//        g.addEdge(nodeThree, nodeOne);
+//        List <NodeGraph> re=new ArrayList<>();
+//        re.add(nodeOne);
+//        re.add(nodeTow);
+//        re.add(nodeThree);
+//
+        ////////////////////////////code 36 && 38/////////////////////////
+
+
+        GraphAdjacencyList graph=new GraphAdjacencyList();
+
+
+
+        NodeGraph one = graph.addNode("one");
+        NodeGraph tow =  graph.addNode("tow");
+        NodeGraph three = graph.addNode("three");
+        NodeGraph four = graph.addNode("four");
+
+
+
+        graph.addEdge(one,tow);
+        graph.addEdge(one,four);
+        graph.addEdge(tow,three);
+        graph.addEdge(tow,four);
+
+
+
+        List<NodeGraph> result = new ArrayList<>();
+        result.add(one);
+        result.add(tow);
+        result.add(three);
+        result.add(four);
+
+        System.out.println(graph.breadthFirst(one));
+        System.out.println(graph.depthFirst(one));
+
+//        System.out.println("Following is Breadth First Traversal "+
+//                "(starting from vertex 2)");
+//        System.out.println(g.breadthFirst(nodeOne));
+
     }
 }
